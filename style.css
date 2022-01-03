@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Play:wght@400;700&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.container {
+    margin: 0 auto;
+    width: 1160px;
+}
+/*------------------------------------------------*/
+
+.firstscreen {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+}
+
+.header-content {
+    padding-top: 30px;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+.header-logo {
+
+}
+.header-menu {
+    margin-top: 3px;
+}
+.menu {
+    display: flex;
+}
+.menu-list{
+    display: flex;
+}
+.list-item {
+    margin-left: 50px;
+}
+.contacts-item {
+    display: flex;
+}
+.phoneicon {
+    margin-right: 10px;
+}
+.callback {
+    margin-top: 2px;
+    margin-left: 13px;
+}
+.firstscreen-offer {
+    margin-top: 97px;
+
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+.offer-title {
+    font-size: 48px;
+}
+.offer-subtitle {
+    margin-top: -10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+.offer-order {
+    display: inline-block;
+    margin-top: 30px;
+    text-transform: uppercase;
+
+    font-family: 'Play', sans-serif;
+    border-radius: 6px;
+    background: #1B6EB8;
+    padding: 18px 24px;
+    letter-spacing: 0.75px;
+}
+.firstscreen-skills {
+    margin-top: 43px;
+    display: flex;
+    justify-content: center;
+}
+.skill-item {
+    display: flex;
+    margin-right: 50px;
+}
+.skill-item p {
+    margin-left: 13px;
+    white-space: nowrap;
+} 
