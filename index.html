@@ -5,81 +5,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>СтройСтальКубань</title>
+    <link rel="stylesheet" href="style.css">
+    <title>My CV</title>
 </head>
 
 <body>
-    <header class="firstscreen">
+    <header class="header">
+        <nav class="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Code</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Languages</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">My Projects</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
         <div class="container">
-            <div class="header-content">
-                <div class="header-logo">
-                    <img src="img/logo.png" alt="logo">
-                </div>
-                <div class="header-menu">
-                    <nav class="menu">
-                        <ul class="menu-list">
-                            <li class="list-item">
-                                <a href="#" class="menu-link">О компании</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="menu-link">Наши услуги</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="menu-link">Выполненные работы</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="menu-link">Прайс-лист</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="menu-link">Контакты</a>
-                            </li>
-                        </ul>
-                        <ul class="menu-contacts">
-                            <div class="contacts-item">
-                                <li>
-                                    <a href="tel:+89188003324"><img src="img/icons/tel.png" alt=""
-                                            class="phoneicon"></a>
-                                </li>
-                                <li>
-                                    <a href="tel:+89188003324">8 (918) 800-33-24</a>
-                                </li>
-                            </div>
-                            <li class="contacts-item callback">
-                                <a href="#" class="callback">Заказать звонок</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            <div class="main-info">
+                <section class="avatar">
+                    <img src="/ava.jpg" alt="photo" class="photo">
+                </section>
+                <section class="name">
+                    <h1 class="name-title">Kirill Stadnik</h1>
+                    <p class="vacancy">Junior Front-End Developer</p>
+                </section>
 
-            <div class="firstscreen-offer">
-                <h1 class="offer-title">Изготовление и монтаж надежных металлоконструкций</h1>
-                <p class="offer-subtitle">
-                    Каждый день мы производим десятки тонн металлоконструкций всех групп сложности
-                </p>
-                <a href="#" class="offer-order">Рассчитать смету</a>
-            </div>
+                <section class="contacts">
+                    <h2 class="section-title">Contacts</h2>
+                    <ul class="contacts-list">
+                        <li class="contacts-item">
+                            Email: <a href="mailto:kirilluchrb@gmail.com">kirilluchrb@gmail.com</a>
+                        </li>
+                        <li class="contacts-item">
+                            Github: <a href="https://github.com/kirilluchrb">kirilluchrb</a>
+                        </li>
+                        <li class="contacts-item">
+                            Telegram: <span>@kirilluchrb</span>
+                        </li>
+                        <li class="contacts-item">
+                            Location: <span>Minsk, Belarus</span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="skills">
+                    <h2 class="section-title">Skills</h2>
+                    <ul class="skills-list">
+                        <li class="skills-item">
+                            Web development: <span> HTML / CSS / JS </span>
+                        </li>
+                        <li class="skills-item">
+                            VCS: <span> Git, GitHub </span>
+                        </li>
+                        <li class="skills-item">
+                            Graphics: <span> Figma, Adobe Photoshop </span>
+                        </li>
+                        <li class="skills-item">
+                            Databases: <span> MySQL </span>
+                        </li>
+                    </ul>
+                </section>
 
-            <div class="firstscreen-skills">
-                <div class="skill-item production">
-                    <img src="img/icons/skills/произв.svg" alt="">
-                    <p>Собственное производство</p>
-                </div>
-                <div class="skill-item stuff">
-                    <img src="img/icons/skills/проектиров.svg" alt="">
-                    <p>Штат своих пректировщиков</p>
-                </div>
-                <div class="skill-item employee">
-                    <img src="img/icons/skills/монтажник.svg" alt="">
-                    <p>Опытные монтажники </p>
-                </div>
+                <section class="education">
+                    <h2 class="section-title">Education</h2>
+                    <ul class="education-list">
+                        <li class="education-item">
+                            <span> Belorussian State University Informatics and Radioelectronics</span>
+                        </li>
+                        <li class="education-item">
+                            <span> HTML Academy </span>
+                        </li>
+                    </ul>
 
+                </section>
+                <section class="code">
+                    <h2 class="section-title">Code Example</h2>
+                    <p class="code-example">
+                        contactsButton.addEventListener('click', () => {
+                        scrollTo(infoBlock);
+                        })
+                        <br>
+
+                        newsButton.addEventListener('click', () => {
+                        scrollTo(newsBlock);
+                        })
+                    </p>
+                </section>
+
+                <section class="languages">
+                    <h2 class="section-title">Languages</h2>
+                    <ul class="languages-list">
+                        <li class="languages-item">
+                            English: <span> A2 </span>
+                        </li>
+                        <li class="languages-item">
+                            Russian: <span> C2 </span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="projects">
+                    <h2 class="section-title">My Projects</h2>
+                    <a href="https://github.com/kirilluchrb" class="projects-link">Github</a>
+                </section>
             </div>
         </div>
+    </main>
 
-    </header>
+    <footer class="footer">
+        <div class="copyright">
+            <p class="year">@2022</p>
+            <p class="developer">kirilluchrb</p>
+        </div>
+
+    </footer>
 </body>
 
 </html>
